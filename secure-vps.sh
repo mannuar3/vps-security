@@ -41,6 +41,12 @@ sudo sed -i 's/^#ChallengeResponseAuthentication.*/ChallengeResponseAuthenticati
 sudo sed -i 's/^ChallengeResponseAuthentication.*/ChallengeResponseAuthentication no/' /etc/ssh/sshd_config
 sudo sed -i 's/^#UsePAM.*/UsePAM yes/' /etc/ssh/sshd_config
 
+# Disable password authentication in PAM (common-auth)
+sudo sed -i 's/^\(auth.*pam_unix.so.*\)$/# \1/' /etc/pam.d/common-auth
+
+# Optionally disable password changes in PAM (common-password)
+sudo sed -i 's/^\(password.*pam_unix.so.*\)$/# \1/' /etc/pam.d/common-password
+
 # Restart SSH
 sudo systemctl restart ssh
 
