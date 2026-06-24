@@ -52,3 +52,13 @@ Designed for portability across regions (OVH or other providers).
 │ (secure state)│          │ Emergency unlock│
 └───────────────┘          └─────────────────┘
 
+
+## 🚀 Quick Start
+
+Clone the repo and run the hardening script:
+
+```bash
+git clone git@github.com:mannuar3/vps-security.git
+cd vps-security
+chmod +x *.sh
+./secure-vps.sh
