@@ -1,9 +1,9 @@
 #!/bin/bash
 # Generate monthly VPS health dashboard with charts + PDF export
 
-LOGFILE="~/vps-security/vps-security.log"
-REPORT_HTML="~/vps-security/monthly-dashboard.html"
-REPORT_PDF="~/vps-security/monthly-dashboard.pdf"
+LOGFILE="$HOME/vps-security/vps-security.log"
+REPORT_HTML="$HOME/vps-security/monthly-dashboard.html"
+REPORT_PDF="$HOME/vps-security/monthly-dashboard.pdf"
 
 # --- Generate HTML dashboard (same as before, with Chart.js) ---
 # [HTML generation code from previous version goes here]

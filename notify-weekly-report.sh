@@ -1,9 +1,9 @@
 #!/bin/bash
 # Combined notifier: email + Slack/Teams using secure config loader
 
-CONFIG="~/vps-security/config.env"
-REPORT="~/vps-security/weekly-report.html"
-LOGFILE="~/vps-security/vps-security.log"
+CONFIG="$HOME/vps-security/config.env"
+REPORT="$HOME/vps-security/weekly-report.html"
+LOGFILE="$HOME/vps-security/vps-security.log"
 
 # Load config silently (no echo)
 set -a
@@ -11,7 +11,7 @@ source $CONFIG
 set +a
 
 # Generate latest report
-~/vps-security/generate-report.sh
+$HOME/vps-security/generate-report.sh
 
 # --- Email Section ---
 IFS=',' read -ra RECIPIENTS <<< "$EMAIL_RECIPIENTS"

@@ -1,9 +1,9 @@
 #!/bin/bash
 # Generate weekly health summary digest
 
-CONFIG="~/vps-security/config.env"
-LOGFILE="~/vps-security/vps-security.log"
-SUMMARY="~/vps-security/weekly-health-summary.txt"
+CONFIG="$HOME/vps-security/config.env"
+LOGFILE="$HOME/vps-security/vps-security.log"
+SUMMARY="$HOME/vps-security/weekly-health-summary.txt"
 
 # Load config silently
 set -a

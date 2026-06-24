@@ -1,8 +1,8 @@
 #!/bin/bash
 # Generate weekly HTML summary from vps-security.log
 
-LOGFILE="~/vps-security/vps-security.log"
-REPORT="~/vps-security/weekly-report.html"
+LOGFILE="$HOME/vps-security/vps-security.log"
+REPORT="$HOME/vps-security/weekly-report.html"
 
 echo "<!DOCTYPE html>
 <html>

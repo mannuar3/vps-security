@@ -1,10 +1,10 @@
 #!/bin/bash
 # VPS Security Toolkit Health Check with Self-Healing + Notifications
 
-CONFIG="~/vps-security/config.env"
-LOGFILE="~/vps-security/vps-security.log"
-REPORT="~/vps-security/weekly-report.html"
-CRON_TEMPLATE="~/vps-security/cron-template.txt"
+CONFIG="$HOME/vps-security/config.env"
+LOGFILE="$HOME/vps-security/vps-security.log"
+REPORT="$HOME/vps-security/weekly-report.html"
+CRON_TEMPLATE="$HOME/vps-security/cron-template.txt"
 
 # Load config silently
 set -a
@@ -65,7 +65,7 @@ fi
 
 # --- Report File ---
 if [ ! -f "$REPORT" ]; then
-    ~/vps-security/generate-report.sh
+    $HOME/vps-security/generate-report.sh
     notify "Weekly report was missing and has been regenerated."
 fi
 

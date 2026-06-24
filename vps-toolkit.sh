@@ -2,10 +2,10 @@
 # VPS Security Toolkit Menu with Logging + Rotation
 
 # Paths to scripts (adjust if needed)
-SECURE_SCRIPT="~/vps-security/secure-vps.sh"
-ROLLBACK_SCRIPT="~/vps-security/rollback-ssh.sh"
-CHECK_SCRIPT="~/vps-security/check-vps-status.sh"
-LOGFILE="~/vps-security/vps-security.log"
+SECURE_SCRIPT="$HOME/vps-security/secure-vps.sh"
+ROLLBACK_SCRIPT="$HOME/vps-security/rollback-ssh.sh"
+CHECK_SCRIPT="$HOME/vps-security/check-vps-status.sh"
+LOGFILE="$HOME/vps-security/vps-security.log"
 MAXSIZE=1048576   # 1 MB in bytes
 
 log_action() {

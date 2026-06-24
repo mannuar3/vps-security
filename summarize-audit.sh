@@ -1,7 +1,7 @@
 #!/bin/bash
 # Summarize last 7 days of VPS audits from vps-security.log
 
-LOGFILE="~/vps-security/vps-security.log"
+LOGFILE="$HOME/vps-security/vps-security.log"
 
 echo "=== VPS Security Summary (Last 7 Days) ==="
 echo ""

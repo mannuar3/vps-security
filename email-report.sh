@@ -1,13 +1,13 @@
 #!/bin/bash
 # Email the weekly VPS security report to multiple recipients
 
-REPORT="~/vps-security/weekly-report.html"
-LOGFILE="~/vps-security/vps-security.log"
+REPORT="$HOME/vps-security/weekly-report.html"
+LOGFILE="$HOME/vps-security/vps-security.log"
 TO=("your-email@example.com" "teammate@example.com" "family@example.com")  # Add as many as needed
 SUBJECT="Weekly VPS Security Report"
 
 # Generate the latest report before sending
-~/vps-security/generate-report.sh
+$HOME/vps-security/generate-report.sh
 
 # Loop through recipients and send individually
 for RECIPIENT in "${TO[@]}"; do
